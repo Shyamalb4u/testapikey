@@ -27,6 +27,9 @@ app.use((req, res, next) => {
 app.get("/", (req, res, next) => {
   res.status(200).send("Checking a simple api");
 });
+app.get("/all", (req, res, next) => {
+  res.status(200).send("Showing Data");
+});
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT);
